@@ -7,12 +7,12 @@ export default defineNuxtConfig({
     '@bootstrap-vue-next/nuxt',
   ],
   css: [
-    'bootstrap/dist/css/bootstrap.min.css'
+    'bootstrap/dist/css/bootstrap.min.css',
   ],
   eslint: {
     config: {
       stylistic: true,
-    }
+    },
   },
-})
+});
 
