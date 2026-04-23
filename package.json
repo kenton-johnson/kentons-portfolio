@@ -10,7 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@bootstrap-vue-next/nuxt": "^0.44.7",
     "@nuxt/eslint": "^1.15.2",
+    "bootstrap": "^5.3.8",
+    "bootstrap-vue-next": "^0.44.7",
     "nuxt": "^4.4.2",
     "vue": "^3.5.32",
     "vue-router": "^5.0.4"
