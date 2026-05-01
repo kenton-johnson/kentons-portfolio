@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+// Background helpers
+.bg-main      { background-color: v.$bg-main !important; }
+.bg-secondary-custom { background-color: v.$bg-secondary !important; }
+.bg-tertiary  { background-color: v.$bg-tertiary !important; }
+.bg-hover     { background-color: v.$bg-hover !important; }
+
+// Text helpers
+.text-coral   { color: v.$accent-coral !important; }
+.text-gold    { color: v.$accent-gold !important; }
+.text-warm    { color: v.$text-primary !important; }
+
+// Border helpers
+.border-coral { border-color: v.$accent-coral !important; }
+.border-gold  { border-color: v.$accent-gold !important; }
+
+// Status badges / alerts follow Bootstrap's own system via $success/$danger etc.

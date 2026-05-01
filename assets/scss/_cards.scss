@@ -1,0 +1,17 @@
+@use 'variables' as v;
+
+.card {
+  background-color: v.$card-bg;
+  border:           1px solid v.$card-border;
+  box-shadow:       0 4px 12px v.$card-shadow;
+  transition:       border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: v.$card-hover-border;
+    box-shadow:   0 6px 20px v.$card-shadow;
+  }
+}
+
+.card-title    { color: v.$text-primary; }
+.card-subtitle { color: v.$text-muted; }
+.card-text     { color: v.$text-secondary; }

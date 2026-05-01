@@ -1,0 +1,16 @@
+/*
+* Main SCSS file that imports all styles in the correct order.
+* We start with our Bootstrap overrides to ensure all components use our design tokens,
+* then we import our custom component styles which can override Bootstrap as needed.
+*/
+
+// 1. Variables and design tokens (before Bootstrap so they can be used in overrides)
+@use 'bootstrap-overrides';
+
+// 2. Your component styles (after Bootstrap so you can override cleanly)
+@use 'typography';
+@use 'buttons';
+@use 'forms';
+@use 'cards';
+@use 'navigation';
+@use 'utilities';

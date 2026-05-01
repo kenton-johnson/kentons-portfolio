@@ -1,14 +1,12 @@
 <template>
-  <BContainer class="py-5">
-    <BHeader> Kenton's Project </BHeader>
-    <BButton variant="primary">Hello BootstrapVueNext!</BButton>
-  </BContainer>
+  <BApp>
+    <BContainer class="py-5">
+      <h1>Kenton's Project</h1>
+      <BButton variant="primary">Hello BootstrapVueNext!</BButton>
+    </BContainer>
+  </BApp>
 </template>
 
-
-<!-- <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
-</template> -->
+<script setup lang="ts">
+import { BApp } from 'bootstrap-vue-next';
+</script>

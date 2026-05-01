@@ -6,12 +6,28 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@bootstrap-vue-next/nuxt',
   ],
-  css: [
-    'bootstrap/dist/css/bootstrap.min.css',
-  ],
+  css: ['~~/assets/scss/main.scss'],
   eslint: {
     config: {
       stylistic: true,
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'bootstrap-vue-next',
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        'bootstrap-vue-next/components/BContainer',
+        'bootstrap-vue-next/components/BButton',
+      ],
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
+        },
+      },
     },
   },
 });

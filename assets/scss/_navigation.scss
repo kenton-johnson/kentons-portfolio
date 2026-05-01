@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+.navbar {
+  background-color: v.$bg-secondary !important;
+
+  .navbar-brand {
+    color: v.$accent-coral;
+    &:hover { color: v.$accent-coral-hover; }
+  }
+
+  .nav-link {
+    color: v.$text-primary;
+    transition: color 0.2s ease;
+
+    &:hover        { color: v.$accent-gold; }
+    &.active       { color: v.$accent-coral; font-weight: 600; }
+  }
+}

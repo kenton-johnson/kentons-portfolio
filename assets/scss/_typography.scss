@@ -1,0 +1,38 @@
+@use 'variables' as v;
+
+h1, .h1 {
+  color: v.$accent-coral;
+}
+
+h2, .h2 {
+  color: v.$accent-gold;
+}
+
+h3, .h3 {
+  color: v.$text-primary;
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
+  color: v.$text-secondary;
+}
+
+p {
+  color: v.$text-primary;
+}
+
+.text-muted {
+  color: v.$text-muted !important;
+}
+
+.text-disabled {
+  color: v.$text-disabled !important;
+}
+
+a {
+  color: v.$link-default;
+  transition: color 0.2s ease;
+
+  &:hover  { color: v.$link-hover; }
+  &:visited { color: v.$link-visited; }
+}

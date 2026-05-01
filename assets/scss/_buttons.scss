@@ -1,0 +1,43 @@
+@use 'variables' as v;
+
+// Primary — coral
+.btn-primary {
+  background-color: v.$accent-coral;
+  border-color:     v.$accent-coral;
+  color:            v.$bg-main;
+
+  &:hover  { background-color: v.$accent-coral-hover;  border-color: v.$accent-coral-hover; }
+  &:active { background-color: v.$accent-coral-active; border-color: v.$accent-coral-active; }
+}
+
+// Secondary — gold
+.btn-secondary {
+  background-color: v.$accent-gold;
+  border-color:     v.$accent-gold;
+  color:            v.$bg-main;
+
+  &:hover  { background-color: v.$accent-gold-hover;  border-color: v.$accent-gold-hover; }
+  &:active { background-color: v.$accent-gold-active; border-color: v.$accent-gold-active; }
+}
+
+// Outline — coral
+.btn-outline-primary {
+  border-color: v.$accent-coral;
+  color:        v.$accent-coral;
+
+  &:hover {
+    background-color: v.$accent-coral;
+    color:            v.$bg-main;
+  }
+}
+
+// Outline — gold
+.btn-outline-secondary {
+  border-color: v.$accent-gold;
+  color:        v.$accent-gold;
+
+  &:hover {
+    background-color: v.$accent-gold;
+    color:            v.$bg-main;
+  }
+}

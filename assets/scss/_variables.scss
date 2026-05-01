@@ -1,0 +1,69 @@
+/*
+* This file defines all the design tokens (colors, typography, spacing, etc.) for the
+* portfolio website. By centralizing these values, we can ensure consistency across all
+* components and make it easy to update the design in the future.
+* The variables are organized into sections for clarity, and we also include the
+* Bootstrap overrides here to ensure all components use our custom values.
+*/
+
+// ─── Background System ───────────────────────────────────────────────────────
+$bg-main:             #1C1C1C;
+$bg-secondary:        #242424;
+$bg-tertiary:         #2E2E2E;
+$bg-modal:            #303030;
+$bg-hover:            #383838;
+
+// ─── Typography ──────────────────────────────────────────────────────────────
+$text-primary:        #F5E8D8;
+$text-secondary:      #D8C7B0;
+$text-muted:          #A8957E;
+$text-disabled:       #6E6255;
+
+// ─── Accent Colors ───────────────────────────────────────────────────────────
+$accent-coral:        #FF6F61;
+$accent-coral-hover:  #FF4500;
+$accent-coral-active: #E03E00;
+$accent-gold:         #DAA520;
+$accent-gold-hover:   #C9961C;
+$accent-gold-active:  #A67C14;
+
+// ─── Status Colors ───────────────────────────────────────────────────────────
+$status-success:      #4CAF50;
+$status-warning:      #FFB74D;
+$status-error:        #FF4500;
+$status-info:         #64B5F6;
+
+// ─── Borders & Dividers ──────────────────────────────────────────────────────
+$border-standard:     #383838;
+$border-light:        #2E2E2E;
+$border-accent:       #DAA520;
+
+// ─── Links ───────────────────────────────────────────────────────────────────
+$link-default:        #DAA520;
+$link-hover:          #FF6F61;
+$link-visited:        #C9961C;
+
+// ─── Cards ───────────────────────────────────────────────────────────────────
+$card-bg:             #242424;
+$card-border:         #383838;
+$card-shadow:         rgba(0, 0, 0, 0.4);
+$card-hover-border:   #FF6F61;
+
+// ─── Bootstrap Overrides ─────────────────────────────────────────────────────
+$primary:             $accent-coral;
+$secondary:           $accent-gold;
+$success:             $status-success;
+$warning:             $status-warning;
+$danger:              $status-error;
+$info:                $status-info;
+$body-bg:             $bg-main;
+$body-color:          $text-primary;
+$border-color:        $border-standard;
+$border-radius:       0.75rem;
+$link-color:          $link-default;
+$link-hover-color:    $link-hover;
+
+// ─── Light Mode (optional future use) ────────────────────────────────────────
+$light-bg:            #F5E8D8;
+$light-text:          #1C1C1C;
+$light-card:          #FFFFFF;

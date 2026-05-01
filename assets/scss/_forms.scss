@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+.form-control,
+.form-select {
+  background-color: v.$bg-tertiary;
+  border-color:     v.$border-standard;
+  color:            v.$text-primary;
+
+  &::placeholder       { color: v.$text-muted; }
+  &:focus              { border-color: v.$accent-coral; box-shadow: 0 0 0 0.2rem rgba(v.$accent-coral, 0.25); }
+  &.is-invalid         { border-color: v.$status-error; }
+}
+
+.form-label {
+  color: v.$text-secondary;
+}
