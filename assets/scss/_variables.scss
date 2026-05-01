@@ -4,6 +4,8 @@
 * components and make it easy to update the design in the future.
 * The variables are organized into sections for clarity, and we also include the
 * Bootstrap overrides here to ensure all components use our custom values.
+* Additionally, we define CSS custom properties for any values that may need to be
+* accessed directly in the HTML or inline styles.
 */
 
 // ─── Background System ───────────────────────────────────────────────────────
@@ -67,3 +69,54 @@ $link-hover-color:    $link-hover;
 $light-bg:            #F5E8D8;
 $light-text:          #1C1C1C;
 $light-card:          #FFFFFF;
+
+// ─── CSS Custom Properties (for inline style access) ─────────────────────────
+:root {
+  // Background System
+  --bg-main:              #{$bg-main};
+  --bg-secondary:         #{$bg-secondary};
+  --bg-tertiary:          #{$bg-tertiary};
+  --bg-modal:             #{$bg-modal};
+  --bg-hover:             #{$bg-hover};
+
+  // Typography
+  --text-primary:         #{$text-primary};
+  --text-secondary:       #{$text-secondary};
+  --text-muted:           #{$text-muted};
+  --text-disabled:        #{$text-disabled};
+
+  // Accent Colors
+  --accent-coral:         #{$accent-coral};
+  --accent-coral-hover:   #{$accent-coral-hover};
+  --accent-coral-active:  #{$accent-coral-active};
+  --accent-gold:          #{$accent-gold};
+  --accent-gold-hover:    #{$accent-gold-hover};
+  --accent-gold-active:   #{$accent-gold-active};
+
+  // Status Colors
+  --status-success:       #{$status-success};
+  --status-warning:       #{$status-warning};
+  --status-error:         #{$status-error};
+  --status-info:          #{$status-info};
+
+  // Borders & Dividers
+  --border-standard:      #{$border-standard};
+  --border-light:         #{$border-light};
+  --border-accent:        #{$border-accent};
+
+  // Links
+  --link-default:         #{$link-default};
+  --link-hover:           #{$link-hover};
+  --link-visited:         #{$link-visited};
+
+  // Cards
+  --card-bg:              #{$card-bg};
+  --card-border:          #{$card-border};
+  --card-shadow:          #{$card-shadow};
+  --card-hover-border:    #{$card-hover-border};
+
+  // Light Mode
+  --light-bg:             #{$light-bg};
+  --light-text:           #{$light-text};
+  --light-card:           #{$light-card};
+}

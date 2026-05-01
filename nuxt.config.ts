@@ -20,6 +20,7 @@ export default defineNuxtConfig({
         '@vue/devtools-kit',
         'bootstrap-vue-next/components/BContainer',
         'bootstrap-vue-next/components/BButton',
+        'bootstrap-vue-next/components/BApp',
       ],
     },
     css: {
