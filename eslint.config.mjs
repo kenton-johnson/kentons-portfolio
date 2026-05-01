@@ -15,6 +15,15 @@ export default withNuxt(
 
       // enforce consistent spacing
       'space-infix-ops': 'error',
+
+      // 2-space indentation
+      'indent': ['error', 2],
+
+      // 2-space indentation for Vue templates
+      'vue/html-indent': ['error', 2],
+
+      // 2-space indentation for Vue script blocks
+      'vue/script-indent': ['error', 2],
     },
   },
 );
